@@ -1,11 +1,10 @@
-#Escriba un programa que pida al usuario dos números enteros, y luego entregue la suma
-#de todos los números que están entre ellos.
+#Escriba un programa que muestre una tabla de multiplicar como la siguiente:
 
-num1 = int(input("Ingrese el primer número: "))
+size = 10
 
-num2 = int(input("Ingrese el segundo número: "))
+for columna in range(1, size +1):
 
-sum = 0
-for i in range(num1 + 1, num2):
-    sum += i
-print(f"La suma es {sum}")
+    for fila in range(1, size +1):
+
+        print(f"{columna * fila:4}", end=" ")
+    print()
