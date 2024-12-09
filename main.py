@@ -1,9 +1,11 @@
-#Escriba un programa que genere todas las potencias de 2,
-#desde la 0-ésima hasta la ingresada por el usuario:
+#Escriba un programa que pida al usuario dos números enteros, y luego entregue la suma
+#de todos los números que están entre ellos.
 
-number = int(input("Ingrese un número: "))
+num1 = int(input("Ingrese el primer número: "))
 
-for i in range(number + 1):
-    potencia = 2 ** i
+num2 = int(input("Ingrese el segundo número: "))
 
-    print(f"{potencia} ")
+sum = 0
+for i in range(num1 + 1, num2):
+    sum += i
+print(f"La suma es {sum}")
