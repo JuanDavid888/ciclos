@@ -1,10 +1,11 @@
-#Escriba un programa que muestre una tabla de multiplicar como la siguiente:
+#Escriba un programa que entregue todos los divisores del número entero ingresado:
 
-size = 10
+dividiendo = (int(input("Ingrese un número: ")))
 
-for columna in range(1, size +1):
+divisores = []
 
-    for fila in range(1, size +1):
+for valor in range(1, dividiendo + 1):
+    if dividiendo % valor == 0:
+        divisores.append(valor)
 
-        print(f"{columna * fila:4}", end=" ")
-    print()
+print(f"{divisores}")
