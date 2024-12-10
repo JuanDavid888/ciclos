@@ -1,11 +1,16 @@
-#Escriba un programa que entregue todos los divisores del número entero ingresado:
+#Desarrolle un programa que permita ingresar los tiempos de viaje de los tramos y 
+#entregue como resultado el tiempo total de viaje en formato horas:minutos.
 
-dividiendo = (int(input("Ingrese un número: ")))
+totalViajes = 0
 
-divisores = []
+while True:
+    viajes = int(input("Duración del tramo: "))
+    if viajes == 0:
+        break
 
-for valor in range(1, dividiendo + 1):
-    if dividiendo % valor == 0:
-        divisores.append(valor)
+    totalViajes += viajes
 
-print(f"{divisores}")
+horas = totalViajes // 60
+minutos = totalViajes % 60
+
+print(f"Tiempo total de viaje: {horas} horas con {minutos} minutos")
